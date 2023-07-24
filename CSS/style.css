@@ -6,6 +6,7 @@
 
 #body-container {
   position: relative;
+  height: 100vh;
 }
 
 #top-green-bg {
@@ -14,17 +15,28 @@
 }
 
 #body-grey-bg {
-  height: 100%;
-  background-color: rgba(0,150,136,255);
+  height: calc(100vh - 150px);
+  background-color: rgba(216,219,214,255);
 }
 
 #main-container {
   z-index: 1000;
   height: 90%;
   width: 80%;
-  background-color: black;
+  border: 1px solid black;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+}
+
+#left-container {   /*non funzionano */
+  height: 100%;
+  width: 40%;
+}
+
+#right-container {
+  height: 100%;
+  width: 60%;
 }
