@@ -34,9 +34,52 @@
 #left-container {   /*non funzionano */
   height: 100%;
   width: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 #right-container {
   height: 100%;
   width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* LEFT PANEL */
+#personal-profile {
+  background-color: rgba(234,234,234,255);
+  height: calc(150px / 5 * 2);
+}
+
+#notification-panel {
+  background-color: rgba(142,218,252,255);
+  height: calc(150px / 5 * 3);
+}
+
+#search-bar {
+  background-color: white;
+  height: 50px;
+}
+
+#chat-list {
+  background-color: white;
+  flex-grow: 1;
+  overflow: scroll;
+  overflow-x: hidden;   /* da vedere se poi crea problemi con nomi di contatti toppo lunghi */
+}
+
+/* RIGHT PANEL */
+#active-user {
+  background-color: rgba(234,234,234,255);
+  height: calc(150px / 5 * 2);
+}
+
+#active-chat {
+  background-image: url(../IMGS/mine.jpg);
+  flex-grow: 1;
+}
+
+#message-area {
+  background-color: rgba(243,238,234,255);
+  height: calc(150px / 5 * 2);
 }
