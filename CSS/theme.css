@@ -1,0 +1,11 @@
+/* STILI DI TESTO */
+#top-notice {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#bottom-notice {
+ font-size: 14px;
+ color: grey;
+ text-decoration: underline;
+}

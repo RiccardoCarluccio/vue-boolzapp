@@ -1,9 +1,28 @@
+/* UNIVERSAL */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ICONS */
+.top-icon {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.top-button {
+  color: rgba(177,177,177,255);
+  font-size: 20px;
+}
+
+#alarm-icon {
+  font-size: 24px;
+  color: rgba(142,218,252,255);
+}
+
+/* MAIN CONTAINERS */
 #body-container {
   position: relative;
   height: 100vh;
@@ -33,27 +52,34 @@
 
 #left-container {   /*non funzionano */
   height: 100%;
-  width: 40%;
+  width: 35%;
   display: flex;
   flex-direction: column;
 }
 
 #right-container {
   height: 100%;
-  width: 60%;
+  width: 65%;
   display: flex;
   flex-direction: column;
 }
 
-/* LEFT PANEL */
+/* BIG LEFT PANEL */
 #personal-profile {
   background-color: rgba(234,234,234,255);
   height: calc(150px / 5 * 2);
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #notification-panel {
   background-color: rgba(142,218,252,255);
   height: calc(150px / 5 * 3);
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
 }
 
 #search-bar {
@@ -68,7 +94,7 @@
   overflow-x: hidden;   /* da vedere se poi crea problemi con nomi di contatti toppo lunghi */
 }
 
-/* RIGHT PANEL */
+/* BIG RIGHT PANEL */
 #active-user {
   background-color: rgba(234,234,234,255);
   height: calc(150px / 5 * 2);
@@ -82,4 +108,33 @@
 #message-area {
   background-color: rgba(243,238,234,255);
   height: calc(150px / 5 * 2);
+}
+
+/* MINI CONTAINER */
+.mini-left-container {
+  display: flex;
+  align-items: center;
+}
+
+.mini-right-container {
+  display: flex;
+  gap: 0.6rem;
+}
+
+/* ACCESSORIES - CRONOLOGIC */
+#white-circle {
+  background-color: white;
+  border-radius: 50%;
+  height: 50px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
 }
