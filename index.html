@@ -48,7 +48,7 @@
         </div>
 
         <div id="chat-list">
-          <div class="open-chat" v-for="(user, index) in contatti" @click="selectChat">
+          <div class="open-chat" v-for="(user, index) in contatti" @click="selectChat(index)">
             <div class="mini-left-container">
               <img :src="`IMGS/avatar${user.avatar}.jpg`" alt="Avatar" class="chat-icon">
               <div class="text-container">

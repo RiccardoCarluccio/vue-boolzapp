@@ -85,12 +85,14 @@ Vue.createApp({
             },
           ],
         },
-      ],      
+      ],
+      selectedChatIndex: -1,
     }
   },
   methods: {
-    selectChat() {
-      //da completare
+    selectChat(index) {
+      this.selectedChatIndex = index;
+      console.log(this.selectedChatIndex);
     }
   }
 }).mount(CHAT_LIST);
