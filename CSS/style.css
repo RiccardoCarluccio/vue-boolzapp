@@ -178,7 +178,7 @@
   flex-grow: 1;
   border: 1px solid lightgray;
   border-left: none;
-  padding-left: 0.7rem;
+  padding: 0 0.7rem;
 }
 
 .search-chat-button {
