@@ -3,7 +3,7 @@
 const CHAT_LIST = document.getElementById("chat-list");
 
 Vue.createApp({
-  date() {
+  data() {
     return {
       contatti: [
         {
