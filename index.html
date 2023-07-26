@@ -6,6 +6,8 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/theme.css">
 
@@ -45,7 +47,9 @@
           <input type="text" id="stretched-input" placeholder="Cerca o inizia una nuova chat">
         </div>
 
-        <div id="chat-list"></div>
+        <div id="chat-list">
+          <div class="open-chat" v-for="(user, index) in contatti"></div>
+        </div>
       </div>
 
       <div id="right-container">
@@ -58,7 +62,7 @@
     <div id="top-green-bg"></div>
     <div id="body-grey-bg"></div>
   </div>    
-  
+
   <script src="JS/main.js"></script>
 </body>
 </html>
