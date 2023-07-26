@@ -82,7 +82,11 @@
         </div>
 
         <div id="active-chat">
-
+          <div v-for="(item, index) in contatti[selectedChatIndex].messages">
+            <div v-if=>
+              {{ item.message }}
+            </div>
+          </div>
         </div>
 
         <div id="message-input">
