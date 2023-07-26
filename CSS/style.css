@@ -22,6 +22,12 @@
   color: rgba(142,218,252,255);
 }
 
+.chat-icon {
+  height: 60px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
 /* MAIN CONTAINERS */
 #body-container {
   position: relative;
@@ -136,11 +142,14 @@
 }
 
 .open-chat {
-  height: calc(100% / 9);
-  border: 1px dashed black;
+  height: calc(100% / 8.5);
+  border-top: 1px solid lightgrey;
+  padding: 0 0.9rem;
+  display: flex;
+  align-items: center;
 }
 
-/* ACCESSORIES - CRONOLOGIC */
+/* ACCESSORIES */
 #white-circle {
   background-color: white;
   border-radius: 50%;

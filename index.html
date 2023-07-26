@@ -35,7 +35,7 @@
             <i class="fa-solid fa-dragon" id="alarm-icon"></i>
           </div>
           <div class="text-container">  <!-- container e contenuto riutilizzabili -->
-            <p id="top-notice">Ricevi notifiche di nuovi messaggi</p>
+            <p class="top-notice">Ricevi notifiche di nuovi messaggi</p>
             <p id="bottom-notice">Attiva Notifiche desktop</p>
           </div>
         </div>
@@ -48,7 +48,13 @@
         </div>
 
         <div id="chat-list">
-          <div class="open-chat" v-for="(user, index) in contatti"></div>
+          <div class="open-chat" v-for="(user, index) in contatti">
+            <img :src="`IMGS/avatar${user.avatar}.jpg`" alt="Avatar" class="chat-icon">
+            <div class="text-container">
+              <p class="top-notice">{{user.name}}</p>
+              <p class="bottom-reception">Ultimo messaggio inviato</p>
+            </div>
+          </div>
         </div>
       </div>
 

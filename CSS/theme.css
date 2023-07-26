@@ -1,5 +1,5 @@
 /* STILI DI TESTO */
-#top-notice {
+.top-notice {
   font-size: 15px;
   font-weight: 600;
 }
@@ -8,4 +8,9 @@
  font-size: 14px;
  color: grey;
  text-decoration: underline;
+}
+
+.bottom-reception {
+  font-size: 14px;
+  color: grey;
 }
