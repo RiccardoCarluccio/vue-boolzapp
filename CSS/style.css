@@ -186,9 +186,18 @@
 }
 
 .mini-time {
-  font-size: 12px;
+  font-size: 11px;
   color: gray;
   font-weight: 600;
+}
+
+.text-message {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.time-sent {
+  text-align: end;
+  padding: 0 0.4rem 0.2rem 0;
 }
 
 #message-input input {
@@ -202,19 +211,18 @@
   display: flex;
 }
 
-.bubble-container-sent {
+.bubble-container.sent {
   align-self: flex-end;
 }
 
 .bubble-speech {
-  padding: 1rem;
   border-radius: 12px;
 }
 
-.sent.bubble-speech {
+.bubble-container.sent .bubble-speech {
   background-color: rgba(213,249,186,255);
 }
 
-.received.bubble-speech {
+.bubble-container.received .bubble-speech {
   background-color: white;
 }

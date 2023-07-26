@@ -82,10 +82,10 @@
         </div>
 
         <div id="active-chat">
-          <div v-for="(item, index) in contatti[selectedChatIndex].messages" class="bubble-container" :class="`bubble-container-${item.status}`">
-            <div :class="item.status" class="bubble-speech">
-              <p>{{ item.message }}</p>
-              <p class="mini-time">12:00</p> <!-- placeholder -->
+          <div v-for="(item, index) in contatti[selectedChatIndex].messages" class="bubble-container" :class="item.status">
+            <div class="bubble-speech">
+              <p class="text-message">{{ item.message }}</p>
+              <p class="mini-time time-sent">12:00</p> <!-- placeholder -->
             </div>
           </div>
         </div>
