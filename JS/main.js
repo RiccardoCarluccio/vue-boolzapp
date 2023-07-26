@@ -1,6 +1,7 @@
 "use-strict"
 
-const CHAT_LIST = document.getElementById("chat-list");
+// const CHAT_LIST = document.getElementById("chat-list");
+const MAIN_CONTAINER = document.getElementById("main-container");
 
 Vue.createApp({
   data() {
@@ -86,13 +87,13 @@ Vue.createApp({
           ],
         },
       ],
-      selectedChatIndex: -1,
+      selectedChatIndex: 0,
     }
   },
   methods: {
-    selectChat(index) {
+    selectChat(index) {   //linkato all'"open-chat" in "chat-list"
       this.selectedChatIndex = index;
-      console.log(this.selectedChatIndex);
+      console.log(this.selectedChatIndex);  //log test
     }
   }
-}).mount(CHAT_LIST);
+}).mount(MAIN_CONTAINER);

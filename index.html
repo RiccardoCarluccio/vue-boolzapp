@@ -57,7 +57,7 @@
               </div>
             </div>
             <div class="timestamp-preview">
-              <p>12:00</p>
+              <p class="mini-time">12:00</p>
             </div>
           </div>
         </div>
@@ -82,9 +82,10 @@
         </div>
 
         <div id="active-chat">
-          <div v-for="(item, index) in contatti[selectedChatIndex].messages">
-            <div v-if=>
-              {{ item.message }}
+          <div v-for="(item, index) in contatti[selectedChatIndex].messages" class="bubble-container" :class="`bubble-container-${item.status}`">
+            <div :class="item.status" class="bubble-speech">
+              <p>{{ item.message }}</p>
+              <p class="mini-time">12:00</p> <!-- placeholder -->
             </div>
           </div>
         </div>
