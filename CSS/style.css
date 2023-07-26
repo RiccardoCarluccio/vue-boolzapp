@@ -6,28 +6,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ICONS */
-.top-icon {
-  height: 50px;
-  border-radius: 50%;
-}
-
-.top-button {
-  color: rgba(177,177,177,255);
-  font-size: 20px;
-}
-
-#alarm-icon {
-  font-size: 24px;
-  color: rgba(142,218,252,255);
-}
-
-.chat-icon {
-  height: 60px;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-}
-
 /* MAIN CONTAINERS */
 #body-container {
   position: relative;
@@ -118,9 +96,14 @@
   flex-grow: 1;
 }
 
-#message-area {
+#message-input {
   background-color: rgba(243,238,234,255);
   height: calc(150px / 5 * 2);
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.3rem;
 }
 
 /* MINI CONTAINER */
@@ -178,7 +161,7 @@
   gap: 0.1rem;
 }
 
-#stretched-input {
+.stretched-input {
   height: 100%;
   flex-grow: 1;
   border: 1px solid lightgray;
@@ -194,4 +177,10 @@
   font-size: 12px;
   color: gray;
   font-weight: 600;
+}
+
+#message-input input {
+  height: 45px;
+  border-radius: 5px;
+  border: none;
 }

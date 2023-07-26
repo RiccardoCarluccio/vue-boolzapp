@@ -14,3 +14,30 @@
   font-size: 14px;
   color: grey;
 }
+
+/* ICONS */
+.top-icon {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.top-button {
+  color: rgba(177,177,177,255);
+  font-size: 20px;
+}
+
+#alarm-icon {
+  font-size: 24px;
+  color: rgba(142,218,252,255);
+}
+
+.chat-icon {
+  height: 60px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.bottom-button {
+  font-size: 26px;
+  color: rgba(177,177,177,255);
+}
