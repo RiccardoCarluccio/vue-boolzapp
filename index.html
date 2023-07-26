@@ -49,10 +49,15 @@
 
         <div id="chat-list">
           <div class="open-chat" v-for="(user, index) in contatti">
-            <img :src="`IMGS/avatar${user.avatar}.jpg`" alt="Avatar" class="chat-icon">
-            <div class="text-container">
-              <p class="top-notice">{{user.name}}</p>
-              <p class="bottom-reception">Ultimo messaggio inviato</p>
+            <div class="mini-left-container">
+              <img :src="`IMGS/avatar${user.avatar}.jpg`" alt="Avatar" class="chat-icon">
+              <div class="text-container">
+                <p class="top-notice">{{user.name}}</p>
+                <p class="bottom-reception">Ultimo messaggio inviato</p>
+              </div>
+            </div>
+            <div class="timestamp-preview">
+              <p>12:00</p>
             </div>
           </div>
         </div>

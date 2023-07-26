@@ -147,6 +147,13 @@
   padding: 0 0.9rem;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.timestamp-preview {
+  position: absolute;
+  top: 20%;
+  right: 5%;
 }
 
 /* ACCESSORIES */
@@ -177,4 +184,10 @@
 
 .search-chat-button {
   color: rgba(177,177,177,255);
+}
+
+.timestamp-preview p {
+  font-size: 12px;
+  color: gray;
+  font-weight: 600;
 }
