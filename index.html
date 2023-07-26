@@ -41,14 +41,14 @@
         </div>
 
         <div id="search-bar">
-          <a href="#" id="search-chat-container">
+          <a href="#" id="search-chat-container"> <!-- forse andava messo un button -->
             <i class="fa-solid fa-dragon search-chat-button"></i>
           </a>
           <input type="text" id="stretched-input" placeholder="Cerca o inizia una nuova chat">
         </div>
 
         <div id="chat-list">
-          <div class="open-chat" v-for="(user, index) in contatti">
+          <div class="open-chat" v-for="(user, index) in contatti" @click="selectChat">
             <div class="mini-left-container">
               <img :src="`IMGS/avatar${user.avatar}.jpg`" alt="Avatar" class="chat-icon">
               <div class="text-container">
@@ -83,4 +83,14 @@
     mini-left-container
     mini-right-container (nel pannello di destra)
     text-container
+-->
+
+<!--
+  TO DO:
+    on "hover" & "active" per le "open-chat"
+-->
+
+<!--
+  DUBBI:
+    servono <form> per la "search-bar" e le "open-chat"?
 -->
