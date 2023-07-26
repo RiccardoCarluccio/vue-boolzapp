@@ -104,9 +104,13 @@
 }
 
 /* BIG RIGHT PANEL */
-#active-user {
+#contact-selected {
   background-color: rgba(234,234,234,255);
   height: calc(150px / 5 * 2);
+  padding: 0 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #active-chat {

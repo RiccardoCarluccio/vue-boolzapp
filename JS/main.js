@@ -90,7 +90,7 @@ Vue.createApp({
   },
   methods: {
     selectChat() {
-      //da completare. riga 51 html
+      //da completare
     }
   }
 }).mount(CHAT_LIST);
