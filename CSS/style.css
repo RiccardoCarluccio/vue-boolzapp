@@ -154,6 +154,14 @@
   align-items: center;
 }
 
+.left-borders {
+  border-radius: 5px 0 0 5px ;
+}
+
+.right-borders {
+  border-radius: 0 5px 5px 0;
+}
+
 .text-container {
   padding-left: 0.5rem;
   display: flex;
