@@ -96,7 +96,12 @@ Vue.createApp({
       console.log(this.selectedChatIndex);  //log test
     },
     sendMessage(sendText) {
-      console.log(sendText);  //test. working
+      console.log(sendText);  //test. working      
+      const selectedChat = this.contatti[this.selectedChatIndex];
+      console.log(selectedChat);
+      selectedChat.messages.push(sendText);
+      console.log(selectedChat.messages);
+      this.sendText = "";
     }
   }
 }).mount(MAIN_CONTAINER);
