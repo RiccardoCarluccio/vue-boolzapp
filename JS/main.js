@@ -102,7 +102,14 @@ Vue.createApp({
           status: "sent",
         };
         this.contatti[this.selectedChatIndex].messages.push(newMessage);
+
+        setTimeout(this.answerMessage, 1);
+
       this.sendText = "";
+    },
+    answerMessage() {
+      this.message = "ok";
+      this.contatti[this.selectedChatIndex].messages.push(newMessage.message);
     }
   }
 }).mount(MAIN_CONTAINER);
