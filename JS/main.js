@@ -108,10 +108,13 @@ Vue.createApp({
       this.sendText = "";
     },
     answerMessage() {
-      this.message = "ok";
-      this.contatti[this.selectedChatIndex].messages.push(newMessage.message);
+      newAnswer = {
+        date: "placeholder",
+        message: "ok",
+        status: "received",
+      };
 
-      console.log(this.message);
-    }
+      this.contatti[this.selectedChatIndex].messages.push(newAnswer);
+    },
   }
 }).mount(MAIN_CONTAINER);
