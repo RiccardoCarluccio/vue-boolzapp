@@ -92,7 +92,7 @@
 
         <div id="message-input">
           <i class="fa-solid fa-dragon bottom-button"></i>
-          <input type="text" placeholder="Scrivi un messaggio" class="stretched-input">
+          <input type="text" placeholder="Scrivi un messaggio" class="stretched-input" @keyup.enter="sendMessage(sendText)" v-model="sendText">
           <i class="fa-solid fa-dragon bottom-button"></i>
         </div>
       </div>

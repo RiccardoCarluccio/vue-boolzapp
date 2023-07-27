@@ -94,6 +94,9 @@ Vue.createApp({
     selectChat(index) {   //linkato all'"open-chat" in "chat-list"
       this.selectedChatIndex = index;
       console.log(this.selectedChatIndex);  //log test
+    },
+    sendMessage(sendText) {
+      console.log(sendText);  //test. working
     }
   }
 }).mount(MAIN_CONTAINER);
