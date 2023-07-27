@@ -84,7 +84,7 @@
 /* BIG RIGHT PANEL */
 #contact-selected {
   background-color: rgba(234,234,234,255);
-  height: calc(150px / 5 * 2);
+  min-height: calc(150px / 5 * 2);
   padding: 0 0.6rem;
   display: flex;
   justify-content: space-between;
@@ -97,12 +97,13 @@
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
-  flex-grow: 1;  
+  flex-grow: 1;
+  overflow: auto;
 }
 
 #message-input {
   background-color: rgba(243,238,234,255);
-  height: calc(150px / 5 * 2);
+  min-height: calc(150px / 5 * 2);
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
