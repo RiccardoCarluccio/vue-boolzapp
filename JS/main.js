@@ -110,6 +110,8 @@ Vue.createApp({
     answerMessage() {
       this.message = "ok";
       this.contatti[this.selectedChatIndex].messages.push(newMessage.message);
+
+      console.log(this.message);
     }
   }
 }).mount(MAIN_CONTAINER);
