@@ -96,20 +96,12 @@ Vue.createApp({
       console.log(this.selectedChatIndex);  //log test
     },
     sendMessage(sendText) {
-      console.log(sendText);  //test. working      
-      const selectedChat = this.contatti[this.selectedChatIndex];
-      console.log(selectedChat);
-      selectedChat.messages.push(sendText);
-      console.log(selectedChat.messages);
-
-      testArray = {
-          date: "10/01/2020 15:30:55",
-          message: "Lo sai che ha aperto una nuova pizzeria?",
+      newMessage = {
+          date: "placeholder",
+          message: `${sendText}`,
           status: "sent",
         };
-      selectedChat.messages.push(testArray);
-      console.log(testArray);
-      console.log(selectedChat.messages);
+        this.contatti[this.selectedChatIndex].messages.push(newMessage);
       this.sendText = "";
     }
   }
