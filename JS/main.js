@@ -101,6 +101,15 @@ Vue.createApp({
       console.log(selectedChat);
       selectedChat.messages.push(sendText);
       console.log(selectedChat.messages);
+
+      testArray = {
+          date: "10/01/2020 15:30:55",
+          message: "Lo sai che ha aperto una nuova pizzeria?",
+          status: "sent",
+        };
+      selectedChat.messages.push(testArray);
+      console.log(testArray);
+      console.log(selectedChat.messages);
       this.sendText = "";
     }
   }
