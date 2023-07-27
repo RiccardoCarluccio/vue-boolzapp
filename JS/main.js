@@ -103,7 +103,7 @@ Vue.createApp({
         };
         this.contatti[this.selectedChatIndex].messages.push(newMessage);
 
-        setTimeout(this.answerMessage, 1);
+        setTimeout(this.answerMessage, 1000);
 
       this.sendText = "";
     },
